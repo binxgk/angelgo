@@ -1,0 +1,10 @@
+# 强制所有文本文件以 LF 存储与检出，防止 CRLF 破坏 Linux 容器的 shebang
+* text=auto eol=lf
+
+# 关键脚本显式钉死为 LF
+*.sh text eol=lf
+Dockerfile text eol=lf
+*.conf text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
